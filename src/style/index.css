@@ -16,6 +16,13 @@
   --accent-color: rgba(255, 255, 255, 0.1);
   --link-color: #00c6f2;
 }
+html{
+  scroll-behavior: smooth;
+}
+.genre_head{
+  font-weight: 800;
+  margin-top: 12px;
+}
 
 /* Container */
 .container {
@@ -27,8 +34,9 @@
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1{
   font-family: 'Press Start 2P', sans-serif;
+  font-size: 36px;
   margin-bottom: 7px;
   color: var(--secondary-color);
 }
@@ -47,6 +55,7 @@ a, .cta-button{
 }
 p{
     line-height: 1.3;
+    font-size: 1.2rem;
     margin-bottom: 8px;
 }
 
@@ -223,14 +232,13 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 75%;
   }
   .gaming_section{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
   }
   .epic_container{
     display: flex;
@@ -245,17 +253,24 @@ a {
   .gaming_aside_section{
     width: 20%;
     flex-shrink: 0;
-    margin-left: 30px;
+    margin-left: 10px;
+  }
+  .game_search{
+    background: #3f3f3f;
+    border: none;
+    border-radius: 5px;
+    color: #fff ;
+    padding: 10px
   }
   .gaming_aside{
     overflow: hidden;
     line-height: normal;
+    width: 100%;
   }
   .section_gaming_container {
     /* display: flex; */
   }
   .my_gaming_container{
-    width: 20%;
     width: 200px;
     height: 200px;
     position: relative;
@@ -272,3 +287,58 @@ a {
   .my_gaming_internal_container{
     bottom: 0;
   }
+  footer {
+    background-color: rgb(64, 63, 63);
+    color: white;
+    padding: 40px 0;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-md-4 {
+    flex: 1;
+    margin: 20px;
+  }
+  .h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.social-media li {
+  margin: 0 5px;
+}
+
+.social-media li a {
+  color: white;
+  font-size: 20px;
+}
+.link_container{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.link_header{
+  text-align: center;
+  padding: 1rem;
+}
+.useful_links{
+  margin: 0.5rem;
+}
+.project_links{
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}

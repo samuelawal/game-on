@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game Search</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed&display=swap');
+		body {
+			font-family: 'Roboto Condensed', sans-serif;
+            font-size: 1.2rem;
+            box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+        a{
+            color: #fff;
+        }
+		.nav-container{
+    border-bottom: 1px solid #fff;
+    /* background-color: #333; */
+}
+		header {
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		form {
+			margin: 20px;
+			text-align: center;
+		}
+		
+		input[type=text] {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			width: 50%;
+			margin-right: 10px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+		
+		input[type=submit] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			cursor: pointer;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+		
+		.search-results {
+			margin: 20px;
+			padding: 20px;
+            color: black;
+			background-color: #f5f5f5;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+        h1{
+            font-family: 'Press Start 2P', sans-serif;
+        }
+		
+		.search-results h2 {
+			margin-top: 0;
+            
+		}
+		
+		.search-results p {
+			margin-bottom: 0;
+		}
+        .navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-link{
+   margin-right: 20px;
+   text-decoration: none;
+}
+	</style>
+    <link rel="stylesheet" href="./style/index.css"/>
+</head>
+<body>
+    <div class="nav-container">
+        <nav role="navigation" aria-label="Main navigation">   
+            <div class="container">
+                <ul class="navbar">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About us</a></li>
+                    <li><a href="./product.html" class="nav-link">Product</a></li>
+					<li><a href="./useful_link.html" class="nav-link">Useful Links</a></li>
+					<li><a href="./search.html" class="nav-link link_active">Search</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+	<header>
+		<h1>Game Search</h1>
+	</header>
+	<main>
+		<form id="search-form">
+			<label for="search-input">Search for a game:</label>
+			<input type="text" id="search-input" name="search-input" placeholder="Enter a game name...">
+			<input type="submit" value="Search">
+		</form>
+		<div class="search-results" id="search-results">
+			<h2>Search Results</h2>
+			<p>No results found.</p>
+		</div>
+	</main>
+	<script src="./js/script.js">
+                </script>
+                </body>
+                </html>
