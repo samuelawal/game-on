@@ -294,6 +294,7 @@ a {
   }
   footer {
     background-color: rgb(64, 63, 63);
+    text-align: center;
     color: white;
     padding: 40px 0;
   }

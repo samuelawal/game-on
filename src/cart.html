@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameOn - Cart</title>
+	<link rel="stylesheet" type="text/css" href="./style/cart.css">
+</head>
+<body>
+	<header>
+		<h1>GameOn</h1>
+		<nav>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./product.html">Games</a></li>
+				<li><a href="./login.html">Login</a></li>
+				<li><a href="./register.html">Login</a></li>
+				<li class="active"><a href="cart.html">Cart</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h2>My Game Cart</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Game Title</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>The Legend of Zelda: Breath of the Wild</td>
+					<td>$59.99</td>
+					<td><input type="number" value="1" min="1" max="10"></td>
+					<td>$59.99</td>
+				</tr>
+				<tr>
+					<td>Mario Kart 8 Deluxe</td>
+					<td>$49.99</td>
+					<td><input type="number" value="2" min="1" max="10"></td>
+					<td>$99.98</td>
+				</tr>
+				<tr>
+					<td>Super Smash Bros. Ultimate</td>
+					<td>$59.99</td>
+					<td><input type="number" value="1" min="1" max="10"></td>
+					<td>$59.99</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Total:</td>
+					<td>$219.96</td>
+				</tr>
+			</tfoot>
+		</table>
+		<button onclick="checkout()">Checkout</button>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 GameOn</p>
+	</footer>
+
+	<script>
+		function checkout() {
+			alert("Thank you for your purchase!");
+			// Redirect to checkout page or payment gateway
+		}
+	</script>
+</body>
+</html>

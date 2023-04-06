@@ -27,10 +27,10 @@ body{
 
   .login-form {
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 300px;
+    width: 500px;
   }
   
   .login-form h1 {

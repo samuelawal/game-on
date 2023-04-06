@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style/dashboard.css">
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#orders">Orders</a></li>
+        <li><a href="#customers">Customers</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="products">
+        <h2>Products</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Product A</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo suscipit orci, a ultrices elit tristique ac.</td>
+                <td>$10.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Product B</td>
+                <td>Maecenas vel nisl at ipsum gravida blandit. Nam sit amet purus euismod, sodales sapien a, rhoncus augue.</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Product C</td>
+                <td>Vivamus gravida lorem ex, ut lacinia erat varius nec. Sed quis orci eget nisi faucibus lacinia in sit amet nibh.</td>
+                <td>$20.00</td>
+              </tr>
+            </tbody>
+          </table>
+      </section>
+      <section id="orders">
+        <h2>Orders</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Product A</td>
+                <td>2</td>
+                <td>$20.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>Product B</td>
+                <td>1</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Bob Johnson</td>
+                <td>Product C</td>
+                <td>3</td>
+                <td>$60.00</td>
+              </tr>
+            </tbody>
+          </table>
+      </section>
+      <section id="customers">
+        <h2>Customers</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>123 Main St, Anytown, USA</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>456 Broadway, Somewhere, USA</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Bob Johnson</td>
+                <td>bjohnson@example.com</td>
+                <td>789 5th Ave, Nowhere, USA</td>
+              </tr>
+            </tbody>
+          </table>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Admin Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
